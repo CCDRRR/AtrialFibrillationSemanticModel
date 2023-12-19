@@ -8,7 +8,7 @@ This ontology is designed to represent semantic relationships between different 
 - **Version:** 1.2
 - **Author:** Project Group: Reasoning With Healthdata 1
 - **Institution:** University of Amsterdam
-- **Date:** 17/12/2023
+- **Date:** 19/12/2023
 
 ## Ontology Structure
 The ontology is represented in the Web Ontology Language (OWL). It includes various classes representing different concepts related to atrial fibrillation, treatments, and related healthcare aspects.
