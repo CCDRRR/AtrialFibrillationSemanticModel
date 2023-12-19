@@ -13,12 +13,6 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#Acenocoumarol"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Amiodarone"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#AntiarrhythmicDrugs"/>
     </Declaration>
     <Declaration>
@@ -29,15 +23,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#AntithromboticDrugs"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Apixaban"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Aspirin"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Atenolol"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AtrialArrhythmia"/>
@@ -55,22 +40,16 @@
         <Class IRI="#BetaBlocker"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Bisoprolol"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#CardiacConductingSystemStructure"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CardiovascularMeasure"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Carvedilol"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#CatheterAblation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Clopidogrel"/>
+        <Class IRI="#CodeSystem"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ConcomitantSurgery"/>
@@ -79,31 +58,13 @@
         <Class IRI="#Cryoablation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Dabigatran"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#DigitalisGlycosides"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Digitoxin"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Digoxin"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Diltiazem"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DirectThrombinInhibitors"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Disopyramide"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#DomainConcept"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Dronedarone"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DrugRisk"/>
@@ -112,22 +73,13 @@
         <Class IRI="#DrugTherapy"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Edoxaban"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#ElectricalCardioversion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Esmolol"/>
     </Declaration>
     <Declaration>
         <Class IRI="#First-lineTreatment"/>
     </Declaration>
     <Declaration>
         <Class IRI="#FirstDetectedAtrialFibrillation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Flecainide"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HeartDisease"/>
@@ -139,13 +91,7 @@
         <Class IRI="#HeartRate"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Ibutilide"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#InvasiveEpicardialNonsternotomyAblation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Landiolol"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LaserAblation"/>
@@ -160,12 +106,6 @@
         <Class IRI="#MazeOperation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MetoprololTartrate"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#MetoprololXL"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#MiniMazeOperation"/>
     </Declaration>
     <Declaration>
@@ -178,9 +118,6 @@
         <Class IRI="#Morbidity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Nebivolol"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Non-DihydropyridineCalciumChannelBlocker"/>
     </Declaration>
     <Declaration>
@@ -188,6 +125,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#NovelOralAnticoagulants"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherRateReductionDrugs"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PacemakerImplantation"/>
@@ -202,12 +142,6 @@
         <Class IRI="#PersistentAtrialFibrillation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Phenprocounmon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Propafenone"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#RadiofrequencyAblation"/>
     </Declaration>
     <Declaration>
@@ -220,13 +154,10 @@
         <Class IRI="#Risk"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Rivaroxaban"/>
+        <Class IRI="#SNOMED_CT_code"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Second-lineTreatment"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Sotalol"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Surgery"/>
@@ -244,16 +175,10 @@
         <Class IRI="#ValuePartition"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Verapamil"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Vernakalant"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#VitaminKAntagonist"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Warfarin"/>
+        <ObjectProperty IRI="#hasCode"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasHeartRate"/>
@@ -297,14 +222,105 @@
     <Declaration>
         <ObjectProperty IRI="#utilizesTreatment"/>
     </Declaration>
-    <SubClassOf>
-        <Class IRI="#Acenocoumarol"/>
-        <Class IRI="#VitaminKAntagonist"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Amiodarone"/>
-        <Class IRI="#AntiarrhythmicDrugs"/>
-    </SubClassOf>
+    <Declaration>
+        <NamedIndividual IRI="#Acenocoumarol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amiodarone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Apixaban"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aspirin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Atenolol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bisoprolol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carvedilol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Clopidogrel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dabigatran"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Digitoxin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Digoxin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diltiazem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Disopyramide"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dronedarone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Edoxaban"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Esmolol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Flecainide"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Heart_Rate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ibutilide"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Landiolol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Metoprolol_XL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Metoprolol_tartrate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mini_Maze_Operation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nebivolol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phenprocounmon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Propafenone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rivaroxaban"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SNOWMED_CT_CODE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sotalol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Verapamil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vernakalant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vitamin_K_Antagonist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Warfarin"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#AntiarrhythmicDrugs"/>
         <Class IRI="#AntiarrhythmicTherapy"/>
@@ -334,18 +350,6 @@
             <ObjectProperty IRI="#isTreatmentOf"/>
             <Class IRI="#First-lineTreatment"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Apixaban"/>
-        <Class IRI="#DirectThrombinInhibitors"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Aspirin"/>
-        <Class IRI="#AntithromboticDrugs"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Atenolol"/>
-        <Class IRI="#BetaBlocker"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AtrialArrhythmia"/>
@@ -410,10 +414,6 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Bisoprolol"/>
-        <Class IRI="#BetaBlocker"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#CardiacConductingSystemStructure"/>
         <Class IRI="#HeartPart"/>
     </SubClassOf>
@@ -427,10 +427,6 @@
     <SubClassOf>
         <Class IRI="#CardiovascularMeasure"/>
         <Class IRI="#DomainConcept"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Carvedilol"/>
-        <Class IRI="#BetaBlocker"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CatheterAblation"/>
@@ -451,8 +447,8 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Clopidogrel"/>
-        <Class IRI="#AntithromboticDrugs"/>
+        <Class IRI="#CodeSystem"/>
+        <Class IRI="#DomainConcept"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ConcomitantSurgery"/>
@@ -461,10 +457,6 @@
     <SubClassOf>
         <Class IRI="#Cryoablation"/>
         <Class IRI="#CatheterAblation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Dabigatran"/>
-        <Class IRI="#DirectThrombinInhibitors"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DigitalisGlycosides"/>
@@ -478,28 +470,8 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Digitoxin"/>
-        <Class IRI="#DigitalisGlycosides"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Digoxin"/>
-        <Class IRI="#DigitalisGlycosides"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Diltiazem"/>
-        <Class IRI="#Non-DihydropyridineCalciumChannelBlocker"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#DirectThrombinInhibitors"/>
         <Class IRI="#NovelOralAnticoagulants"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Disopyramide"/>
-        <Class IRI="#AntiarrhythmicDrugs"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Dronedarone"/>
-        <Class IRI="#AntiarrhythmicDrugs"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DrugRisk"/>
@@ -524,10 +496,6 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Edoxaban"/>
-        <Class IRI="#DirectThrombinInhibitors"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#ElectricalCardioversion"/>
         <Class IRI="#NonDrugTreatment"/>
     </SubClassOf>
@@ -544,10 +512,6 @@
             <ObjectProperty IRI="#isTreatmentOf"/>
             <Class IRI="#Second-lineTreatment"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Esmolol"/>
-        <Class IRI="#BetaBlocker"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#First-lineTreatment"/>
@@ -590,20 +554,37 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Flecainide"/>
-        <Class IRI="#AntiarrhythmicDrugs"/>
+        <Class IRI="#HeartDisease"/>
+        <Class IRI="#DomainConcept"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HeartDisease"/>
-        <Class IRI="#DomainConcept"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCode"/>
+            <Class IRI="#SNOMED_CT_code"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HeartPart"/>
         <Class IRI="#DomainConcept"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#HeartPart"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCode"/>
+            <Class IRI="#SNOMED_CT_code"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#HeartRate"/>
         <Class IRI="#CardiovascularMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeartRate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCode"/>
+            <Class IRI="#SNOMED_CT_code"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HeartRate"/>
@@ -613,16 +594,8 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Ibutilide"/>
-        <Class IRI="#AntiarrhythmicDrugs"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#InvasiveEpicardialNonsternotomyAblation"/>
         <Class IRI="#CatheterAblation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Landiolol"/>
-        <Class IRI="#BetaBlocker"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LaserAblation"/>
@@ -655,14 +628,6 @@
         <Class IRI="#Surgery"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MetoprololTartrate"/>
-        <Class IRI="#BetaBlocker"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MetoprololXL"/>
-        <Class IRI="#BetaBlocker"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#MiniMazeOperation"/>
         <Class IRI="#MazeOperation"/>
     </SubClassOf>
@@ -686,10 +651,6 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Nebivolol"/>
-        <Class IRI="#BetaBlocker"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Non-DihydropyridineCalciumChannelBlocker"/>
         <Class IRI="#RateReductionDrugs"/>
     </SubClassOf>
@@ -707,6 +668,17 @@
     <SubClassOf>
         <Class IRI="#NovelOralAnticoagulants"/>
         <Class IRI="#AntithromboticDrugs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherRateReductionDrugs"/>
+        <Class IRI="#RateReductionDrugs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherRateReductionDrugs"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isTreatmentOf"/>
+            <Class IRI="#Second-lineTreatment"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PacemakerImplantation"/>
@@ -767,14 +739,6 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Phenprocounmon"/>
-        <Class IRI="#VitaminKAntagonist"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Propafenone"/>
-        <Class IRI="#AntiarrhythmicDrugs"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#RadiofrequencyAblation"/>
         <Class IRI="#CatheterAblation"/>
     </SubClassOf>
@@ -791,8 +755,8 @@
         <Class IRI="#DomainConcept"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Rivaroxaban"/>
-        <Class IRI="#DirectThrombinInhibitors"/>
+        <Class IRI="#SNOMED_CT_code"/>
+        <Class IRI="#CodeSystem"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Second-lineTreatment"/>
@@ -829,10 +793,6 @@
                 <Class IRI="#PersistentAtrialFibrillation"/>
             </ObjectUnionOf>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Sotalol"/>
-        <Class IRI="#AntiarrhythmicDrugs"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Surgery"/>
@@ -886,25 +846,146 @@
         <Class IRI="#ValuePartition"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Verapamil"/>
-        <Class IRI="#Non-DihydropyridineCalciumChannelBlocker"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Vernakalant"/>
-        <Class IRI="#AntiarrhythmicDrugs"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#VitaminKAntagonist"/>
         <Class IRI="#AntithromboticDrugs"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Warfarin"/>
+    <ClassAssertion>
+        <Class IRI="#VitaminKAntagonist"/>
+        <NamedIndividual IRI="#Acenocoumarol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AntiarrhythmicDrugs"/>
+        <NamedIndividual IRI="#Amiodarone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OtherRateReductionDrugs"/>
+        <NamedIndividual IRI="#Amiodarone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DirectThrombinInhibitors"/>
+        <NamedIndividual IRI="#Apixaban"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#AntithromboticDrugs"/>
-    </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#First-lineTreatment"/>
-        <Class IRI="#Second-lineTreatment"/>
-    </DisjointClasses>
+        <NamedIndividual IRI="#Aspirin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BetaBlocker"/>
+        <NamedIndividual IRI="#Atenolol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BetaBlocker"/>
+        <NamedIndividual IRI="#Bisoprolol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BetaBlocker"/>
+        <NamedIndividual IRI="#Carvedilol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AntithromboticDrugs"/>
+        <NamedIndividual IRI="#Clopidogrel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DirectThrombinInhibitors"/>
+        <NamedIndividual IRI="#Dabigatran"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DigitalisGlycosides"/>
+        <NamedIndividual IRI="#Digitoxin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DigitalisGlycosides"/>
+        <NamedIndividual IRI="#Digoxin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Non-DihydropyridineCalciumChannelBlocker"/>
+        <NamedIndividual IRI="#Diltiazem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AntiarrhythmicDrugs"/>
+        <NamedIndividual IRI="#Disopyramide"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AntiarrhythmicDrugs"/>
+        <NamedIndividual IRI="#Dronedarone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DirectThrombinInhibitors"/>
+        <NamedIndividual IRI="#Edoxaban"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BetaBlocker"/>
+        <NamedIndividual IRI="#Esmolol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AntiarrhythmicDrugs"/>
+        <NamedIndividual IRI="#Flecainide"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AntiarrhythmicDrugs"/>
+        <NamedIndividual IRI="#Ibutilide"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BetaBlocker"/>
+        <NamedIndividual IRI="#Landiolol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BetaBlocker"/>
+        <NamedIndividual IRI="#Metoprolol_XL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BetaBlocker"/>
+        <NamedIndividual IRI="#Metoprolol_tartrate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MiniMazeOperation"/>
+        <NamedIndividual IRI="#Mini_Maze_Operation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BetaBlocker"/>
+        <NamedIndividual IRI="#Nebivolol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VitaminKAntagonist"/>
+        <NamedIndividual IRI="#Phenprocounmon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AntiarrhythmicDrugs"/>
+        <NamedIndividual IRI="#Propafenone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DirectThrombinInhibitors"/>
+        <NamedIndividual IRI="#Rivaroxaban"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeartDisease"/>
+        <NamedIndividual IRI="#SNOWMED_CT_CODE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AntiarrhythmicDrugs"/>
+        <NamedIndividual IRI="#Sotalol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Non-DihydropyridineCalciumChannelBlocker"/>
+        <NamedIndividual IRI="#Verapamil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AntiarrhythmicDrugs"/>
+        <NamedIndividual IRI="#Vernakalant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AntithromboticDrugs"/>
+        <NamedIndividual IRI="#Warfarin"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <NamedIndividual IRI="#Heart_Rate"/>
+        <Literal xml:lang="en">Heart rate is the number of heartbeats per minute.</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCode"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasMorbidity"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -988,19 +1069,9 @@
         <Literal xml:lang="en">A term referring to abnormal heart rhythms specifically originating in the atria, the upper chambers of the heart. Atrial arrhythmia includes conditions such as atrial fibrillation and atrial flutter, where the regular electrical impulses in the atria are disrupted, leading to irregular heartbeats.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>#AtrialArrhythmia</IRI>
-        <Literal xml:lang="en">http://snomed.info/id/17366009</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#AtrialCardiopathy</IRI>
         <Literal xml:lang="en">A term referring to a set of structural or functional abnormalities affecting the atria of the heart. Atrial cardiopathy encompasses various conditions that may predispose individuals to atrial fibrillation and other cardiovascular issues.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>#AtrialCardiopathy</IRI>
-        <Literal xml:lang="en">http://snomed.info/id/870575001</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1008,29 +1079,14 @@
         <Literal>Atrial fibrillation is a cardiac arrhythmia characterised by irregular contraction of the heart. This is due to a disturbance of the electrical impulse conduction and it can eventually lead to stroke and heart failure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>#AtrialFibrillation</IRI>
-        <Literal xml:lang="en">http://snomed.info/id/49436004</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>#AtrialStructure</IRI>
-        <Literal xml:lang="en">http://snomed.info/id/59652004</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>#CardiacConductingSystemStructure</IRI>
-        <Literal xml:lang="en">http://snomed.info/id/24964005</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#CardiovascularMeasure</IRI>
         <Literal xml:lang="en">A quantitative assessment or measurement related to the cardiovascular system, encompassing parameters such as heart rate or other indicators that provide insights into the functioning and health of the cardiovascular system.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>#CardiovascularMeasure</IRI>
-        <Literal xml:lang="en">http://snomed.info/id/310611001</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CodeSystem</IRI>
+        <Literal xml:lang="en">A standardized system for the representation and identification of medical concepts, providing a set of codes and terms to facilitate uniform communication and interoperability in healthcare information systems.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1048,19 +1104,9 @@
         <Literal xml:lang="en">A non-neoplastic or neoplastic disorder that affects the heart and/or the pericardium. Representative examples include endocarditis, pericarditis, atrial myxoma, cardiac myeloid sarcoma, and pericardial malignant mesothelioma. [NCI]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>#HeartDisease</IRI>
-        <Literal xml:lang="en">http://snomed.info/id/56265001</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#HeartPart</IRI>
         <Literal xml:lang="en">Representing a component or anatomical structure of the heart, contributing to its overall function. Heart parts include chambers (such as atria and ventricles), valves, septa, and other structures that collectively enable the heart to pump blood and maintain circulatory function.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>#HeartPart</IRI>
-        <Literal xml:lang="en">http://snomed.info/id/119202000</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1068,9 +1114,9 @@
         <Literal xml:lang="en">A quantitative measure representing the number of heartbeats per minute, typically used to assess the rate at which the heart is functioning. Measured in beats per minute (bpm), heart rate is a vital sign often employed in health assessment and monitoring.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>#HeartRate</IRI>
-        <Literal>http://snomed.info/id/364075005</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mini_Maze_Operation</IRI>
+        <Literal xml:lang="en">Removal of pulmonary veins to avoid abnormal stimuli from reaching the heart.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1083,29 +1129,14 @@
         <Literal>When a patient has had two or more episodes of Atrial Fibrillation and if the patient converts back to sinus rhythm within 7 days.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>#ParoxysmalAtrialFibrillation</IRI>
-        <Literal xml:lang="en">http://snomed.info/id/282825002</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#PermanentAtrialFibrillation</IRI>
         <Literal>If the attempt to convert the heart rhythm back to normal sinus rhythm fails or is not made at all, Atrial Fibrillation is defined as permanent.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>#PermanentAtrialFibrillation</IRI>
-        <Literal xml:lang="en">http://snomed.info/id/440028005</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#PersistentAtrialFibrillation</IRI>
         <Literal>When a patient has had two or more episodes of Atrial Fibrillation and recurrent Atrial Fibrillation has lasted longer than 7 days.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>#PersistentAtrialFibrillation</IRI>
-        <Literal xml:lang="en">http://snomed.info/id/440059007</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1114,8 +1145,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SNOMED_CT_code</IRI>
+        <Literal xml:lang="en">A code assigned within the Systematized Nomenclature of Medicine -- Clinical Terms (SNOMED CT), a comprehensive and multilingual clinical terminology system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#VitaminKAntagonist</IRI>
         <Literal xml:lang="en">A class of anticoagulant medications that inhibit the action of vitamin K, a key factor in the synthesis of blood clotting proteins.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCode</IRI>
+        <Literal xml:lang="en">A property indicating the assignment of a specific code or identifier to an entity within a coding or classification system.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
