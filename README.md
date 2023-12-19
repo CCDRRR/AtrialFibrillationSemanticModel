@@ -5,7 +5,7 @@ This ontology is designed to represent semantic relationships between different 
 
 ## Ontology Details
 - **Ontology Name:** Atrial Fibrillation Ontology
-- **Version:** 1.0
+- **Version:** 1.2
 - **Author:** Project Group: Reasoning With Healthdata 1
 - **Institution:** University of Amsterdam
 - **Date:** 17/12/2023
@@ -39,4 +39,4 @@ Researchers, healthcare professionals, and developers can use this ontology to m
 Contributions are welcome! If you find issues or want to enhance the ontology, please submit a pull request.
 
 ## Contact
-For questions or feedback, feel free to contact us at joshua.krafft@student.uva.nl
+For questions or feedback, feel free to contact us at alex.tseng@student.uva.nl
